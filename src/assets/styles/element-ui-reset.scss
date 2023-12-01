@@ -1,0 +1,37 @@
+//container 满屏
+.el-container {
+  height: 100%;
+}
+
+.el-aside {
+  height: calc(100vh - 60px); // 设置左侧 aside 高度
+}
+
+.el-main {
+  padding: 0;
+  height: calc(100vh - 60px);
+}
+
+//header 紧贴左右
+.el-header {
+  --el-header-padding: 0;
+  height: 70px;
+}
+
+.el-menu {
+  height: 100%;
+}
+
+//文字居中
+.el-menu-item, .el-sub-menu__title {
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+}
+
+.el-row {
+  margin: 30px 20px;
+}
+
+.el-tabs {
+  width: 100%;
+}
