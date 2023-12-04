@@ -47,7 +47,7 @@ let SCList = ref<SimilarDetail[]>([])
 function loadSimilarCaseList(id: string) {
   getSimilarCase(id).then((res) => {
     SCList.value = res.resultUnits
-    console.log(res.resultUnits)
+    // console.log(res.resultUnits)
   })
 }
 
