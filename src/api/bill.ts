@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { BILL_MODULE } from '@/api/_prefix'
 
 export const getCaseList = (payload: { page: number; size: number }) => {

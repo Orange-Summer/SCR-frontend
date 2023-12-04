@@ -8,7 +8,7 @@
 }
 
 .el-main {
-  padding: 0;
+  padding: 0 !important;
   height: calc(100vh - 60px);
 }
 
@@ -20,6 +20,7 @@
 
 .el-menu {
   height: 100%;
+  border-right: 0 !important;
 }
 
 //文字居中
@@ -34,4 +35,8 @@
 
 .el-tabs {
   width: 100%;
+}
+
+.el-menu--horizontal.el-menu {
+  border-bottom: 0 !important;
 }

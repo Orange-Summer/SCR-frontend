@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
-import SubMenu from '@/components/SubMenu.vue'
 
 const data = reactive([
   {
@@ -9,6 +7,12 @@ const data = reactive([
     content: '案例列表'
   }
 ])
+
+const router = useRouter()
+
+function toHome() {
+  router.push({ name: 'home' })
+}
 </script>
 
 <template>
@@ -22,7 +26,7 @@ const data = reactive([
         mode="horizontal"
         :router="true"
       >
-        <el-menu-item>司法类案检索</el-menu-item>
+        <el-menu-item @click="toHome">司法类案检索系统</el-menu-item>
       </el-menu>
     </el-header>
     <el-container>

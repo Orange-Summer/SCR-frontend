@@ -1,3 +1,7 @@
+<script setup lang="ts">
+defineProps(['subMenuList']);
+</script>
+
 <template>
   <template v-for="(item, index) in subMenuList">
     <el-sub-menu
@@ -20,8 +24,5 @@
     </el-menu-item>
   </template>
 </template>
-<script setup lang="ts">
-defineProps(['subMenuList']);
-</script>
 
 <style scoped></style>
